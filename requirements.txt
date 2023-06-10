@@ -8,4 +8,3 @@ ydata-profiling
 plotly
 mpld3
 pandas_profiling
--U ydata-profiling

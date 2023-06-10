@@ -5,7 +5,7 @@ A repository for building GUI for CSV files.
 
 Original work using [streamlit lib](https://docs.streamlit.io/library/api-reference) 
 
-App is deployed at: 
+App is deployed at: [csvApp](https://kamalelsaaid-csvapp-streamlitui-ysn23h.streamlit.app/)
 ## Installation
 
 To run this project, you will need to add the following environment:
