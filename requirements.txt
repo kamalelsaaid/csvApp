@@ -1,7 +1,7 @@
 pexpect
 streamlit
 streamlit-chat
-pandas
+# pandas
 streamlit-pandas-profiling
 streamlit-aggrid
 ydata-profiling
