@@ -6,3 +6,4 @@ streamlit-pandas-profiling
 streamlit-aggrid
 ydata-profiling
 plotly
+mpld3
