@@ -15,7 +15,7 @@ def generate_dynamic_grid(df):
     with select_param:
         param_lst = list(df.columns)
         select_param = st.selectbox('Select a Column: ',   param_lst)
-        name=st.selectbox("Choose another Column to compare",param_lst)
+        # name=st.selectbox("Choose another Column:",param_lst)
         # st.write(len(name))
     if isinstance(select_param,str):
         st.write("please select a column with number values")
@@ -23,24 +23,12 @@ def generate_dynamic_grid(df):
         
         
         st.subheader("Line Chart") 
-        st.line_chart(df[select_param])
+        st.line_chart(df[select_param], use_container_width=True)
         st.subheader("Bar Chart") 
-        st.bar_chart(df[select_param])
+        st.bar_chart(df[select_param], use_container_width=True)
         st.subheader("Area Chart") 
-        st.area_chart(df[select_param])
+        st.area_chart(df[select_param], use_container_width=True)
         st.subheader("Altair Chart") 
-        st.altair_chart(df[select_param])
+        st.altair_chart(df[select_param], use_container_width=True)
         
-        n = len(df)
-        ymax = max(df[select_param])+5
-        ymin = 0
-        print(n, ymax, ymin)
         
-        for i in range(0, 1):
-            df_tmp = df.iloc[i:, :]
-            print(df_tmp)
-            st.markdown(df_tmp.to_html(), unsafe_allow_html=True)
-            time.sleep(2)
-            with plot_spot:
-                make_chart(df_tmp, select_param, ymin, ymax, name)
-            time.sleep(2)

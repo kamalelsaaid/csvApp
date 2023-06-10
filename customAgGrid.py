@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd 
 import altair as alt
 
-from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode, JsCode, ColumnsAutoSizeMode
+from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode, JsCode, ColumnsAutoSizeMode, AgGridTheme
 
 class customAgGrid:
     def __init__(self) -> None:
@@ -104,7 +104,7 @@ class customAgGrid:
             gridOptions=gridOptions,
             height=self.grid_height, 
             width='100%',
-            theme='blue', #Add theme color to the table
+            theme=AgGridTheme.ALPINE, #Add theme color to the table
             columns_auto_size_mode=self.columns_size_value,
             data_return_mode=self.return_mode_value, 
             update_mode=self.update_mode_value,
