@@ -7,3 +7,7 @@ streamlit-aggrid
 ydata-profiling
 plotly
 mpld3
+pandas-profiling==2.11.0
+pandas==1.2.4
+Flask==2.1.0
+Jinja2==3.0.3
