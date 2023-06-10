@@ -4,7 +4,7 @@ streamlit-chat
 # pandas
 streamlit-pandas-profiling
 streamlit-aggrid
-ydata-profiling
+# ydata-profiling
 plotly
 mpld3
 pandas-profiling==2.11.0
