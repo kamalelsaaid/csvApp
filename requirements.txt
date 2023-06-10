@@ -1,13 +1,3 @@
-langchain
-black
-python-dotenv==0.21.0
-tweepy
-dotenv
-pinecone-client
-chromadb
-tiktoken
-pypdf
-faiss-cpu
 pexpect
 streamlit
 streamlit-chat
@@ -15,3 +5,4 @@ pandas
 streamlit-pandas-profiling
 streamlit-aggrid
 ydata-profiling
+plotly
