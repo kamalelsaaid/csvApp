@@ -1,0 +1,6 @@
+name: streamlit-conda-minimal
+channels:
+  - conda-forge
+dependencies:
+  - xlrd
+  - pandas-profiling
